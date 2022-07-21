@@ -1,0 +1,277 @@
+/**
+  1. Color
+  2. Background-Color
+  3. Border-color
+**/
+/* ===============================================
+    Color
+------------------------*/
+/** 1.Skin-color **/
+/*
+#site-header-menu #site-navigation .menu ul.dropdown>li.active>a,
+#site-header-menu #site-navigation .menu ul.sub-menu li>a:hover,
+#site-header-menu #site-navigation .menu ul.sub-menu>li.active>a,
+#site-header-menu #site-navigation .menu ul>li:hover>a,
+#site-header-menu #site-navigation .menu>ul>li ul a:before,
+#site-navigation .menu ul>li:hover>a:before,
+.breadcrumb-wrapper span a:hover,
+.breadcrumb-wrapper span:last-child,
+.breadcrumb-wrapper span>i,
+.cmt-bgcolor-darkgrey .cmt-bgcolor-white .fa-star:before,
+.cmt-bgcolor-skincolor .cmt-bgcolor-white .fa-star:before,
+.cmt-bgcolor-white .featured-content .featured-desc a:hover,
+.cmt-blog-single .blockquote-box:after,
+.cmt-btn-color-skincolor,
+.cmt-btn.btn-inline.cmt-btn-color-darkgrey:hover,
+.cmt-btn.cmt-btn-color-skincolor,
+.cmt-btn.cmt-btn-color-white:hover,
+.cmt-fid-icon-wrapper i,
+.cmt-header-icon-box i,
+.cmt-header-style-02 #site-header-menu #site-navigation .menu ul.dropdown>li.active>a,
+.cmt-header-style-02 #site-header-menu #site-navigation .menu ul.dropdown>li:hover>a,
+.cmt-header-style-03 #site-header-menu #site-navigation .menu ul.dropdown>li:hover>a,
+.cmt-header-style-03 .cmt-rt-contact .cmt-rt-icon,
+.cmt-header-style-04 .cmt-header-icons .cmt-header-search-link a:hover,
+.cmt-icon_element-color-skincolor,
+.cmt-pf-detailbox-list .cmt-pf-details-date i,
+.cmt-team-details-list li .team-icon-box i,
+.cmt-team-member-single-position,
+.cmt-testimonial-box-view-style1 .testimonial-content blockquote:before,
+.cmt-textcolor-skincolor,
+.cmt-textcolor-white a:hover,
+.contact-box h6 a,
+.contact-box span a:hover,
+.fa-star:before,
+.featured-imagebox-portfolio.style2 .cmt-media-link a:hover,
+.featured-imagebox-portfolio.style2 .featured-title h5 a:hover,
+.featured-imagebox-team.style1 .social-icons li>a,
+.section-title h5,
+.section-title.row-title ul.list-inline li i,
+.sidebar .widget a:hover,
+.sidebar .widget-area .widget.widget-link .social-icons li>a,
+.sidebar ul.contact-widget-wrapper li i,
+.top-contact li>i,
+.tp-caption.skin-flatborder-button,
+.widget ul#menu-footer-services li a:before,
+.widget.widget-categories ul li i,
+.widget.widget-nav-menu ul li i,
+.widget_contact li i,
+a.tp-caption.dark-text-button:hover,
+a:hover,
+ul.social-icons li a:hover {
+  color: #fe982f
+}*/
+h1.cmt-textcolor-skincolor,
+h2.cmt-textcolor-skincolor,
+h3.cmt-textcolor-skincolor,
+h4.cmt-textcolor-skincolor,
+h5.cmt-textcolor-skincolor,
+h6.cmt-textcolor-skincolor {
+  color: #fe982f !important;
+}
+/** Skin-bg-color **/
+#site-header-menu #site-navigation .menu ul li a span,
+#site-header-menu #site-navigation .menu ul.sub-menu > li.active > a:before,
+#site-header-menu #site-navigation .menu ul.sub-menu > li:hover > a:before,
+#totop.top-visible,
+.accordion .cmt-style-classic.active .toggle-title,
+.cmt-bg-highlight-skin,
+.cmt-bgcolor-grey .pagination-block .page-numbers.current,
+.cmt-bgcolor-grey .pagination-block .page-numbers:hover,
+.cmt-bgcolor-skincolor,
+.cmt-bgcolor-skincolor > .cmt-bg-layer,
+.cmt-bgcolor-skincolor > .cmt-bg-layer > .cmt-bg-layer-inner,
+.cmt-blog-single blockquote:before,
+.cmt-box-post-date,
+.cmt-btn-bgcolor-darkgrey:hover,
+.cmt-btn-bgcolor-darkgrey:hover:before,
+.cmt-btn-bgcolor-skincolor,
+.cmt-btn-color-skincolor.cmt-btn:before,
+.cmt-btn.cmt-btn-color-skincolor.cmt-btn-style-border:hover,
+.cmt-cart-form button:hover,
+.cmt-header-icons .cmt-header-cart-link span.number-cart,
+.cmt-header-style-01 .site-navigation:after,
+.cmt-header-style-01 .site-navigation:before,
+.cmt-header-style-02
+  #site-header-menu
+  #site-navigation
+  .menu
+  > ul.dropdown
+  > li:hover
+  > a:before,
+.cmt-header-style-03
+  #site-header-menu
+  #site-navigation
+  .menu
+  > ul.dropdown
+  > li:hover
+  > a:before,
+.cmt-header-style-03 .cmt-rt-contact,
+.cmt-header-style-03 .site-navigation:after,
+.cmt-icon_element-bgcolor-skincolor,
+.cmt-nextprev-bottom-nav .nav-next a,
+.cmt-nextprev-bottom-nav .nav-previous a,
+.cmt-progress-bar .progress-bar.progress-bar-color-bar_skincolor,
+.cmt-search-overlay .cmt-site-searchform button,
+.cmt-tabs.cmt-tab-style-horizontal ul.tabs li.active a,
+.cmt-team-member-single-content .cmt-social-links-wrapper ul li a:hover,
+.cmt-testimonial-box-view-style1:hover
+  .cmt-bgcolor-white.testimonial-content:after,
+.cmt-toggle-title-bgcolor-skincolor .toggle-title,
+.cmt-video-btn .cmt-btn-play,
+.color-trigger,
+.comment-list a.comment-reply-link:hover,
+.coupon button:hover,
+.featured-content-services .services-icon-box,
+.featured-icon-box.style1 .cmt-icon:before,
+.featured-icon-box.style10.left-icon .featured-content:before,
+.featured-icon-box.style11:before,
+.featured-icon-box.style1:hover
+  .cmt-icon.cmt-icon_element-border.cmt-icon_element-color-white,
+.featured-icon-box.style4:before,
+.featured-imagebox-portfolio.style1 .featured-content,
+.featured-imagebox-services:hover
+  .featured-icon-box
+  .cmt-icon.cmt-icon_element-size-md,
+.featured-imagebox-team.style1 .social-icons li > a:hover,
+.featured-imagebox-team.style2 .cmt-social-links-wrapper,
+.featured-imagebox-team:after,
+.first-footer .cmt-footer-cta-wrapper:after,
+.pagination-block .page-numbers.current,
+.pagination-block .page-numbers:hover,
+.place-order button:hover,
+.progress-bar:before,
+.section-title.with-desc .title-header:after,
+.sidebar .widget .tagcloud a:hover,
+.sidebar .widget .widget-title:after,
+.sidebar .widget-area .widget.widget-link .social-icons li > a:hover,
+.sidebar .widget.widget-nav-menu ul li:after,
+.sidebar .widget.widget-newsletter button,
+.skin-flat-button,
+.social-icons.circle li > a:hover,
+.social-media-block .media-button ul li a:hover,
+.top-contact.cmt-highlight-left:after,
+.top-contact.cmt-highlight-right:after,
+.tp-caption.skin-flat-button,
+.tp-caption.skin-flatborder-button:hover,
+.tp-cmt-video-play-btn,
+.tp-shapewrapper,
+.ttm_single_image-wrapper.border-style2:after,
+a.checkout-button:hover,
+a.cmt-btn-bgcolor-darkgrey:hover:before,
+.featured-imagebox-portfolio.style1 .portfolio-icon-box,
+.cmt-header-style-02
+  #site-header-menu
+  #site-navigation
+  .menu
+  ul.dropdown
+  > li.active
+  > a:before,
+.cmt-header-style-03
+  #site-header-menu
+  #site-navigation
+  .menu
+  ul.dropdown
+  > li.active
+  > a:before,
+.cmt-header-style-04
+  #site-header-menu
+  #site-navigation
+  .menu
+  ul.dropdown
+  > li.active
+  > a:before,
+.cmt-header-style-04
+  #site-header-menu
+  #site-navigation
+  .menu
+  ul.dropdown
+  > li:hover
+  > a:before,
+.cmt-header-style-04
+  #site-header-menu
+  #site-navigation
+  .menu
+  ul.dropdown
+  > li
+  > a:before,
+.about-overlay-shape.style3 {
+  background-color: #333;
+}
+.featured-content-services .services-icon-box:hover {
+  background-color: rgba(254, 152, 47, 0.9);
+}
+/** Skin-border-color **/
+.skin-border,
+.accordion .cmt-style-classic.active .toggle-title,
+.cmt-btn-play:after,
+.cmt-btn-play:before,
+.cmt-btn.cmt-btn-color-skincolor.cmt-btn-style-border,
+.cmt-col-bgimage-yes.with-border,
+.cmt-icon.cmt-icon_element-border.cmt-icon_element-color-skincolor,
+.cmt-video-btn .cmt-btn-play,
+.featured-icon-box.style1:hover
+  .cmt-icon.cmt-icon_element-border.cmt-icon_element-color-white,
+.featured-imagebox-team.style1 .social-icons li > a:hover,
+.form-control:focus,
+.newsletter-form input[type="email"]:focus,
+.sidebar .widget .tagcloud a:hover,
+.sidebar .widget-area .widget.widget-link .social-icons li > a,
+.sidebar .widget.widget-newsletter button,
+.skin-flat-button,
+.social-icons.circle li > a:hover,
+.tp-caption.skin-flat-button,
+.tp-caption.skin-flatborder-button,
+.tp-cmt-video-play-btn,
+.ttm_single_image-wrapper.border-style1:after,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus {
+  border-color: #fe982f;
+}
+.cmt-header-style-01 .cmt-topbar-wrapper,
+.cmt-header-style-01 .site-navigation,
+.featured-imagebox-post.style2 .featured-content:before {
+  border-left-color: #fe982f !important;
+}
+.cmt-header-style-02 #site-header-menu #site-navigation .menu > ul,
+.cmt-header-style-02 #site-header-menu #site-navigation .menu > ul > li > ul,
+.cmt-header-style-02 .cmt-search-overlay,
+.cmt-header-style-03 #site-header-menu #site-navigation .menu > ul > li > ul,
+.cmt-header-style-04 #site-header-menu #site-navigation .menu > ul > li > ul,
+.cmt-header-style-04 .cmt-search-overlay,
+.skin-border.with-top-border,
+.about-overlay-shape.style3:after {
+  border-top-color: #fe982f !important;
+}
+.featured-icon-box.style2 .cmt-icon.cmt-icon_element-size-md:before,
+.label-new:before {
+  border-right-color: #fe982f !important;
+}
+.cmt-header-style-02 .cmt-search-overlay .w-search-form-row:before,
+.cmt-header-style-04 .cmt-search-overlay .w-search-form-row:before,
+.featured-icon-box.style6:before {
+  border-bottom-color: #fe982f !important;
+}
+@media only screen and (min-width: 1200px) {
+  .cmt-header-style-01 .site-navigation {
+    background-color: #fe982f;
+  }
+}
+@media all and (max-width: 1199px) {
+  #site-header-menu #site-navigation .menu > ul {
+    border-top-color: #fe982f !important;
+  }
+}
