@@ -29,7 +29,7 @@ if ($do_submit) {
     if ($sql) {
       $order_id = $sql;
       foreach ($_product as $p) {
-        $p_ep = explode("-", $p);
+        $p_ep = explode("[&]", $p);
         $sql = $core->SqlIn("order_products", array("product_id" => $p_ep[0], "order_id" => $order_id, "price" => $p_ep[2], "quantity" => $p_ep[1]));
       }
       if ($sql) {
