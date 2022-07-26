@@ -2927,6 +2927,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
             font-weight: bold;
         }
     </style>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62deab34c2cb0d00192a0669&product=sop' async='async'></script>
 </head>
 
 <body>
