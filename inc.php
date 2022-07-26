@@ -1,6 +1,6 @@
 <?php
 $inc = (isset($_GET["inc"]));
-$plang = (isset($_GET["plang"]));
+$plang = (isset($_GET["plang"]) && trim($_GET["plang"]) ? $_GET["plang"] : "");
 include_once("classes/core.php");
 $core = new core;
 include("inc/inc_formemail.php");

@@ -233,7 +233,7 @@ if ($id && !$products[0]["level"]) {
 
                                                     $mail->From = "mail@sherktk.net";
 
-                                                    $mail->FromName = $name;
+                                                    $mail->FromName = $_POST["fullName"];
                                                     $info_media["code"] = "email";
                                                     $contents = $core->getinfo_media($info_media);
                                                     $emaills = $contents[0]["link"];
@@ -290,7 +290,7 @@ if ($id && !$products[0]["level"]) {
                                                                     <div class="row">
                                                                         <div class="col-md-6">
                                                                             <div class="form-group">
-                                                                                <input name="name" type="text" class="form-control" value="" placeholder="<?= plang("الاسم الكامل", "Full Name") ?>" required="required">
+                                                                                <input name="fullName" type="text" class="form-control" value="" placeholder="<?= plang("الاسم الكامل", "Full Name") ?>" required="required">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6">
