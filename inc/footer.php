@@ -205,6 +205,11 @@
             }
             return false;
         }
+        if ($(".addtocart" + id).hasClass("noprice")) {
+            // alert("<?= plang("عذرا المنتج غير متوفر", "Sorry, the product is not available") ?>");
+            location.replace($(".addtocart" + id).attr("href"));
+            return true;
+        }
         if ($(".addtocart" + id).hasClass("outofstock")) {
             alert("<?= plang("عذرا المنتج غير متوفر", "Sorry, the product is not available") ?>");
             return false;;

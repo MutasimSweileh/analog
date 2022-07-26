@@ -64,7 +64,7 @@ $clang : get form  inc.php for column name  =  _arabic || "" ;
                                 <a href="<?= $core->getPageUrl(array($products[$i]['id'], $products[$i]['name' . $clang]), "products" . $plang) ?>"><?= $products[$i]["name" . $clang] ?></a>
                             </h3>
 
-                            <a href="<?= ($outofstock ? $core->getPageUrl(array($products[$i]['id'], $products[$i]['name' . $clang]), "products" . $plang) : "javascript:void(0);") ?>" onclick="addtocart('<?= $id ?>'); return false;" class=" addtocart<?= $id ?> addtocart <?= ($outofstock ? "" : "outofstock") ?> "><?= ($outofstock ? plang('اطلب الان', 'Order Now') : plang('غير متاح الان', 'Not available now')) ?></a>
+                            <a href="<?= ($outofstock ? $core->getPageUrl(array($products[$i]['id'], $products[$i]['name' . $clang]), "products" . $plang) : "javascript:void(0);") ?>" onclick="addtocart('<?= $id ?>'); return false;" class=" addtocart<?= $id ?> addtocart <?= ($outofstock ? "" : "outofstock") ?> <?= ($price ? "" : "noprice") ?> "><?= ($outofstock ? plang('اطلب الان', 'Order Now') : plang('غير متاح الان', 'Not available now')) ?></a>
                         </div>
                     </div>
                 <? } ?>

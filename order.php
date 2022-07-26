@@ -24,7 +24,7 @@ if ($do_submit) {
     unset($_POST["_product"]);
     unset($_POST["_product2"]);
     unset($_POST["quantity"]);
-    $_POST["date"] = time();
+    $_POST["date"] = date("Y-m-d", time());
     $sql = $core->SqlIn("order", $_POST);
     if ($sql) {
       $order_id = $sql;
@@ -83,6 +83,7 @@ if ($do_submit) {
         $contents = $core->getinfo_media($info_media);
         $emaills = $contents[0]["link"];
         $mail->AddAddress($emaills);
+        $mail->AddAddress($_POST["email"]);
         $mail->IsHTML(true);
         $mail->Subject = $alt . " - Order";
         $mail->Body = $text;

@@ -2979,7 +2979,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                                     </div>
                                 </li>
                             </ul>
-                            <a href="" class="lang-at-mob"><img src="images/<?= plang('english', 'arabic') ?>.png"><?= plang('English', 'Arabic') ?></a>
+                            <a href="<?= plang($core->getPageUrl("index"), $core->getPageUrl("indexarabic")) ?>" class="lang-at-mob"><img width="30" src="images/<?= plang('english', 'arabic') ?>.png"><?= plang('English', 'Arabic') ?></a>
                         </div>
                     </div>
                 </div>
@@ -2991,7 +2991,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                         <!-- site-branding -->
                         <div class="site-branding">
                             <a class="home-link" href="<?= $core->getPageUrl("index" . $plang) ?>" title="Raxena" rel="home">
-                                <img id="logo" class="img-center" src="images/logo2.png" alt="logo">
+                                <img id="logo" class="img-center" src="images/logo2<?= $plang ?>.png" alt="logo">
                             </a>
                         </div><!-- site-branding end -->
                         <!-- cmt-top-info-con-->
@@ -3106,7 +3106,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
         </header>
         <!--header end-->
         <!--Main Slider-->
-        <?php if ($pagg != 1 && $pagg != 3) {
+        <?php if ($pagg != 1) {
             $news = (strpos($name, "news") !== false && $id);
             $style = "bann2.jpeg";
             if ($news) {
@@ -3133,6 +3133,18 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                                     </span>
                                     <span class="cmt-bread-sep"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
                                     <span><span><?= getTitle($name) ?></span></span>
+                                    <?
+                                    if (isv("level") && ($product = $core->getData("products", array("id" => isv("level"))))) {
+                                        $leproducts = $core->getData("products", array("id" => $product[0]["level"]));
+                                        if ($leproducts) {
+                                    ?>
+                                            <span class="cmt-bread-sep"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            <span>
+                                                <span><?= $leproducts[0]["name" . $clang] ?></span>
+                                            </span>
+
+                                    <? }
+                                    } ?>
                                 </div>
                                 <?php if ($news) { ?>
                                     <span style="    display: block;
@@ -3154,44 +3166,3 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
             </div>
 
         <?php }
-        if ($pagg != 1 && 1 == 2) {
-            $news = (strpos($name, "news") !== false && $id);
-            $style = "";
-            if ($news) {
-                $news = $core->getevents($array)[0];
-                $style = "background: url(images/" . $news["image"] . ") repeat;    padding-bottom: 10px;";
-                $date = getDateTime($news["date"], $lang);
-            } ?>
-            <div class="inner-page-header" style="<?= $style ?>">
-                <div class="container">
-                    <div class="row">
-                        <!--                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                     <div class="header-page-title">
-                         <h2><?= $pageTitle ?></h2>
-                     </div>
-                 </div>-->
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="header-page-locator">
-                                <ul>
-                                    <li><a href="index<?= $plang ?>.php"><?= getTitle("index" . $plang) ?></a><?= (isv("level") ||  isv("id") ? " / <a href='" . $name . ".php'>" . getTitle($name) . "</a>" : "") ?> / <?= ($news ? "" : $pageTitle) ?></li>
-                                </ul> <?php if ($news) { ?>
-                                    <div style="    text-align: center;
-    color: #fff;
-    font-size: 24px;"><?= $pageTitle ?><span style="    display: block;
-    font-size: 15px;
-    margin-top: 26px;
-    color: #ffba00;"><?= $date[0] ?>, <?= $date[1] ?> <?= $date[2] ?></span>
-                                        <ul style="width: auto;
-    margin: 0;
-    margin-top: 10px;" class="styled-icons icon-dark icon-sm icon-circled">
-                                            <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= $FUr ?>" data-bg-color="#3B5998" style="background: rgb(59, 89, 152) !important;"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a target="_blank" href="http://twitter.com/share?text=<?= $products[0]["smoll_description" . $clang] ?>&amp;url=<?= $FUr ?>" data-bg-color="#02B0E8" style="background: rgb(2, 176, 232) !important;"><i class="fab fa-twitter"></i></a></li>
-                                        </ul>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php } ?>

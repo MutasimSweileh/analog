@@ -1,5 +1,5 @@
 <?
-$plang = (isset($_GET["plang"]) ? "arabic" : "");
+$plang = (isset($_GET["plang"]) && $_GET["plang"] ? "arabic" : "");
 include_once("classes/core.php");
 $core = new core;
 ?>
